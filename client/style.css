@@ -1,0 +1,67 @@
+body { 
+    background-color: green; 
+    justify-content: center; 
+    display: flex; 
+    align-items: center; 
+    height: 100vh; 
+    font-family: Arial, sans-serif; 
+} 
+
+.container { 
+    width: 400px; 
+    padding: 20px; 
+    background-color: #fff; 
+    border-radius: 8px; 
+} 
+
+.container h1 { 
+    text-align: center; 
+} 
+
+.form-input { 
+    margin-bottom: 11px; 
+} 
+
+.form-input label { 
+    display: block; 
+    margin-bottom: 5px; 
+} 
+
+.form-input input { 
+    width: 80%; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 12px; 
+} 
+
+.btn button { 
+    cursor: pointer; 
+    background-color: #007BFF; 
+    transition: background-color 0.4s ease; 
+    color: #fff; 
+    border: none; 
+    padding: 10px 20px; 
+    border-radius: 3px; 
+    font-size: 12px; 
+} 
+
+.guest-card { 
+    border: 1px solid #ccc; 
+    padding: 5px; 
+    margin: 5px 0; 
+    background-color: #fff; 
+    border-radius: 5px; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); 
+} 
+
+.btn button:hover { 
+    background-color: #394b5e; 
+}   
+.guest-card h2 { 
+    margin: 0; 
+} 
+.guest-card p { 
+    margin: 5px 0; 
+}
