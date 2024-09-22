@@ -10,6 +10,9 @@
 //a FormData object template
 //get the formValues to insert them into the FormData object
 
+// const base_url = "http://localhost:8080";
+const base_url = "https://guest-book-n1rj.onrender.com";
+
 const guestForm = document.getElementById("guestForm");
 const guestList = document.getElementById("guestList");
 
@@ -34,7 +37,7 @@ guestForm.addEventListener("submit", function (event) {
   const formData = new FormData(document.getElementById("guestForm"));
   const feedbackData = Object.fromEntries(formData);
 
-  fetch("http://localhost:8080/feedback", {
+  fetch(`${base_url}/feedback`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -45,7 +48,7 @@ guestForm.addEventListener("submit", function (event) {
   guestForm.reset();
 });
 
-fetch("http://localhost:8080/feedbacks", {
+fetch(`${base_url}/feedbacks`, {
   method: "GET",
   headers: {
     "Content-Type": "application/json",
